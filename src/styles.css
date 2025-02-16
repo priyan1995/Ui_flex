@@ -2,3 +2,22 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+body {
+  background: black;
+}
+
+.pd-flexbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pd-flexbox-wrapper .pd-flexbox-item {
+  background: white;
+  max-width: 0 0 30%;
+  flex: 0 0 30%;
+  height: 100px;
+  border: 2px solid red;
+}
