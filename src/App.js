@@ -10,10 +10,23 @@ export default function App() {
     document.querySelector("body").setAttribute("data-theme", "light");
   };
 
-  setDarkMode();
+  const changeTheme = (e) => {
+    if (e.target.checked) {
+      setDarkMode();
+    } else {
+      setLightMode();
+    }
+  };
 
   return (
     <div className="App">
+      <label className="text-white">
+        <input type="checkbox" onChange={changeTheme} />
+        Change theme
+      </label>
+      <br />
+      <br />
+      <br />
       <FlexBox />
     </div>
   );

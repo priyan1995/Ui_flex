@@ -1,6 +1,6 @@
-body {
+/* body {
   background: black;
-}
+} */
 
 .text-white {
   color: white;
@@ -22,4 +22,12 @@ body {
   min-width: 25%;
   flex: 0 0 25%;
   border: 1px solid red;
+}
+
+:root {
+  --body-background: white;
+}
+
+[data-theme="dark"] {
+  --body-background: black;
 }
